@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #a4aca4d5;
+    font-family: 'Roboto';
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.addbtn,
+.removebtn,
+.clearAllbtn {
+    width: 250px;
+    font-size: 2rem;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto 50px;
+    background-color: white;
+}
+
+.addbtn:hover,
+.removebtn:hover,
+.clearAllbtn:hover {
+    background-color: cadetblue
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    margin: 10px auto;
+    font-size: 1.5rem;
+    text-align: justify;
+}

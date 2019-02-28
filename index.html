@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <style>@import url('https://fonts.googleapis.com/css?family=Roboto');</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="nav">
+            <button class="addbtn" type="button" @click="addTodo(numbers)">
+                Add
+            </button>
+            <button class="removebtn" type="button" @click="removeTodo()">
+                Cancel
+            </button>
+            <button class="clearAllbtn" type="button" @click="clearAll()">
+                Clear All
+            </button>
+        </div>
+        <h1>To do list :</h1>
+        <div v-if="todos.length == 0">
+            <h3 class="empty">Nothing to do</h3>
+        </div>
+        <div v-else>
+            <div v-for="todo in todos">
+                <h3 class="addTask">Task Number {{ todo
+                    }}</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
