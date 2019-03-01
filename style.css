@@ -13,9 +13,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-
+    text-align: center;
+    margin: 50px auto;
+    width: 350px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    min-height: 700px;
+    border: 2px solid black;
+    box-shadow: inset 0px 0px 13px 4px rgba(0, 0, 0, 1);
 }
 
 .addbtn,
@@ -26,8 +31,9 @@ body {
     height: 50px;
     text-align: center;
     border-radius: 15px;
-    margin: 30px auto 50px;
+    margin: 5px auto;
     background-color: white;
+    cursor: pointer;
 }
 
 .addbtn:hover,
@@ -36,13 +42,29 @@ body {
     background-color: cadetblue
 }
 
+.addbtn {
+    margin-top: 30px;
+}
+
+.clearAllbtn {
+    margin-bottom: 40px;
+}
+
+.clearAllbtn:active {
+    background-color: red;
+}
+
 h1 {
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
-h3 {
-    margin: 10px auto;
+h3,
+.addTask {
+    margin: 0px auto 5px;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
+    letter-spacing: 1px;
 }
